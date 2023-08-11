@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="64"
+   height="64"
+   viewBox="0 0 6.963026 6.9632"
+   preserveAspectRatio="xMidYMid"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="angular.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     id="namedview10"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     showguides="true"
+     inkscape:zoom="5.6568543"
+     inkscape:cx="87.150911"
+     inkscape:cy="34.294679"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8" />
+  <rect
+     style="fill:#27384c;fill-opacity:1;stroke-width:0.0939266"
+     id="rect370"
+     width="6.9632001"
+     height="6.9632001"
+     x="-8.7e-05"
+     y="0" />
+  <path
+     d="M 1.3715974,1.9212042 3.4649644,1.1477235 5.6147056,1.9074515 5.2666265,4.7796404 3.4649644,5.8143878 1.6914895,4.7933933 Z"
+     fill="#e23237"
+     id="path2"
+     style="stroke-width:0.0169447" />
+  <path
+     d="M 5.6147056,1.9074515 3.4649644,1.1477235 V 5.8143878 L 5.2666265,4.7813659 Z"
+     fill="#b52e31"
+     id="path4"
+     style="stroke-width:0.0169447" />
+  <path
+     d="M 3.4682759,1.6926024 2.1638648,4.7023006 2.6511491,4.6937074 2.9130363,4.0147529 h 1.1701646 l 0.2867461,0.6875477 0.4657365,0.00859 z m 0.0033,0.9642755 0.440877,0.9556647 H 3.0837418 Z"
+     fill="#ffffff"
+     id="path6"
+     style="stroke-width:0.0169447" />
+</svg>
