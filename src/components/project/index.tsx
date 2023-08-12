@@ -21,7 +21,7 @@ export default function Project(props: ProjectProps) {
           {props.tag && (
             <span className="text-lg text-white/60 flex flex-col">
               {props.tag}
-              {location && <span>{props.location}</span>}
+              {props.location && <span>{props.location}</span>}
             </span>
           )}
         </span>
