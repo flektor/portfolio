@@ -1,0 +1,39 @@
+[
+  {
+    "title": "Meet",
+    "description": "A social app, where you can find others for making an activity.",
+    "date": "Jul 2023",
+    "liveUrl": "chicory-final-flektor.vercel.app",
+    "repoUrl": "https://github.com/flektor/chicory-final",
+    "stack": ["React", "Next.js", "MySQL", "Prisma", "TypeScript", "tRPC", "Tailwind"]
+  },
+  {
+    "title": "Candle",
+    "description": "In collaboration with a dynamic team of five, I spearheaded the development of a single-player 2D game using the Unity engine. Our project offers the player a challenge to escape from a dungeon within a tight one-minute timeframe. As the game unfold, players must navigate through increasingly constricting visibility, ratcheting up the tension and adrenaline. This project was truly a complete experience, as our team consisted of two programmers, an artist, a sound engineer and a game designer.",
+    "date": "May 2023",
+    "liveUrl": "https://flektor.github.io/Candel/play/",
+    "repoUrl": "https://github.com/flektor/Candle",
+    "stack": ["Unity", "C#"],
+    "tag": "#mini-game-jam",
+    "location": "@SAE, Berlin"
+  },
+  {
+    "title": "Tetrees",
+    "description": "During the intensive three-day Global Game Jam, I collaborated with three seasoned professionals actively working in the game industry, and together, we formed a dynamic team of four. Guided by their expertise, I actively contributed to the development of an exciting 2D Unity game. This experience acted as an immersive learning journey, allowing me to gather valuable knowledge and improve my skills while co-creating a unique game where players strategically extend tree roots to reach an underground water source.",
+    "date": "3-5 Feb 2023",
+    "liveUrl": "https://flektor.github.io/Tetrees/play/",
+    "repoUrl": "https://github.com/flektor/Tetrees",
+    "stack": ["Unity", "C#"],
+    "tag": "#global-game-jam",
+    "location": "@SAE, Berlin"
+  },
+  {
+    "title": "Tetrion",
+    "tag": "#thesis",
+    "description": "A creative version of the classic Tetris game, in 3D for the web. This project, created as a key component of my thesis, uses Angular, TypeScript, Firebase, Sass and Three.js to bring the virtual game to a new visual dimension. While the gameplay retains its beloved 2D essence, an exciting twist awaits players upon completing a line of bricks. In an innovative move, these bricks take on dynamic physics and explode out of the scene, presenting an exciting fusion of traditional gameplay with dynamic 3D interactions. All 3D elements were designed in Blender.",
+    "date": "May 2021",
+    "liveUrl": "https://tetrion-88a95.web.app/",
+    "repoUrl": "https://github.com/flektor/tetrion",
+    "stack": ["Angular", "TypeScript", "Firebase", "Three.js", "Sass", "Blender"]
+  }
+]
