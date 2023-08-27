@@ -13,7 +13,7 @@
     "date": "May 2023",
     "liveUrl": "https://flektor.github.io/Candel/play/",
     "repoUrl": "https://github.com/flektor/Candle",
-    "stack": ["Unity", "C#"],
+    "stack": ["Unity", "CSharp"],
     "tag": "#mini-game-jam",
     "location": "@SAE, Berlin"
   },
@@ -23,7 +23,7 @@
     "date": "3-5 Feb 2023",
     "liveUrl": "https://flektor.github.io/Tetrees/play/",
     "repoUrl": "https://github.com/flektor/Tetrees",
-    "stack": ["Unity", "C#"],
+    "stack": ["Unity", "CSharp"],
     "tag": "#global-game-jam",
     "location": "@SAE, Berlin"
   },

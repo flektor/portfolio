@@ -1,8 +1,8 @@
 import React from "react";
-import CodewarsUserBadge from "../codewars-user-badge";
+import CodewarsUserBadge from "../CodewarsUserBadge";
 import useSWR from "swr";
 import { RankObject, User } from "codewars-api-types/v1";
-import CodewarsBadge from "../codewars-badge";
+import CodewarsBadge from "../CodewarsBadge";
 import getProperLanguageName from "~/utils/proper-language-names";
 import Image from "next/image";
 import { getIcon } from "~/utils/tech-icons";

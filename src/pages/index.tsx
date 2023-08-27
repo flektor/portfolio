@@ -1,16 +1,17 @@
-import AvatarBubble from "~/components/avatar-bubble";
-import AboutMe from "~/components/about-me";
-import Projects from "~/components/projects";
-import Education from "~/components/education";
+import AvatarBubble from "~/components/AvatarBubble";
+import AboutMe from "~/components/AboutMe";
+import Projects from "~/components/Projects";
+import Education from "~/components/Education";
+import PhoneMockup from "~/components/PhoneMockup";
 
 import dynamic from "next/dynamic";
 
-const CodewarsUser = dynamic(() => import("~/components/codewars-user"), {
+const CodewarsUser = dynamic(() => import("~/components/CodewarsUser"), {
   ssr: false,
 });
 
 const CodewarsCompletedKatas = dynamic(
-  () => import("~/components/codewars-completed-katas"),
+  () => import("~/components/CodewarsCompletedKatas"),
   {
     ssr: false,
   },
