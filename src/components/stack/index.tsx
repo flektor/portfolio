@@ -1,11 +1,11 @@
 import React from "react";
-import images from "./images-data.json";
 import Image from "next/image";
+import { getIcons } from "../../utils/tech-icons";
 
 export default function Stack({ technologies }: { technologies: string[] }) {
   return (
     <ul className="flex flex-wrap gap-2 w-2/3 float-right justify-end mr-10 -mt-10">
-      {images.filter((tech) => technologies.includes(tech.alt))
+      {getIcons(technologies)
         .map((image) => (
           <li
             className="relative group"
