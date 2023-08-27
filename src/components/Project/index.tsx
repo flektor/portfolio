@@ -1,5 +1,5 @@
 import React from "react";
-import Stack from "../stack";
+import Stack from "../Stack";
 
 export type ProjectProps = {
   title: string;
@@ -26,7 +26,7 @@ export default function Project(props: ProjectProps) {
           )}
         </span>
 
-        <span className="text-2xl p-1 block">
+        <span className="text-xl p-1 block">
           {props.description}
         </span>
         <span className="text-xl text-white/60 pb-6 block">
