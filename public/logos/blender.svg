@@ -6,13 +6,12 @@
    preserveAspectRatio="xMidYMid"
    version="1.1"
    id="svg8"
-   sodipodi:docname="blender.svg"
-   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
    xml:space="preserve"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   xmlns:svg="http://www.w3.org/2000/svg">
+   <defs
      id="defs12"><path
        d="M1.253 280.732l1.605-3.131 99.353-188.518-44.15-83.475C54.392-1.283 45.074.474 43.87 8.188L1.253 280.732z"
        id="a" /><filter
@@ -69,28 +68,10 @@
      id="namedview10"
      pagecolor="#ffffff"
      bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
+     borderopacity="0.25" 
      showgrid="false"
      showguides="true"
-     inkscape:zoom="5.62961"
-     inkscape:cx="73.184466"
-     inkscape:cy="49.737016"
-     inkscape:window-width="1920"
-     inkscape:window-height="1009"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg8" /><rect
-     style="fill:#27384c;fill-opacity:1;stroke-width:0.0939266"
-     id="rect370"
-     width="6.9632001"
-     height="6.9632001"
-     x="-8.7e-05"
-     y="0" /><style
+   /> <style
      id="style8834">.st0{fill:#007acc}.st1{fill:#fff}</style><g
      id="g8869"
      transform="matrix(0.01776698,0,0,0.01776698,0.7784857,1.4083073)"><path
