@@ -34,6 +34,12 @@ export const projectsProps = [
     backgroundColor: "#FAF8EF",
   },
 
+  {
+    name: "Gallery",
+    images: ["./images/Gallery/1.png"],
+    backgroundColor: "#FAF8EF",
+  },
+
   { name: "2048", images: ["./images/2048/1.png"], backgroundColor: "#FAF8EF" },
 ] as const;
 
