@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import useSWR, { mutate } from "swr";
 import { CompletedChallenges } from "codewars-api-types/v1";
-import getProperLanguageName from "~/utils/proper-language-names";
+import getProperLanguageName from "~/utils/properLanguageNames";
 
 const fetchData = async (url: string) => {
   const response = await fetch(url);

@@ -3,9 +3,9 @@ import CodewarsUserBadge from "../CodewarsUserBadge";
 import useSWR from "swr";
 import { RankObject, User } from "codewars-api-types/v1";
 import CodewarsBadge from "../CodewarsBadge";
-import getProperLanguageName from "~/utils/proper-language-names";
+import getProperLanguageName from "~/utils/properLanguageNames";
 import Image from "next/image";
-import { getIcon } from "~/utils/tech-icons";
+import { getIcon } from "~/utils/techIcons";
 
 const fetchData = async (url: string) => {
   const response = await fetch(url);

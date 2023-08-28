@@ -1,6 +1,6 @@
 import React from "react";
 
-import getRankColor from "~/utils/codewars-color-to-hex";
+import getRankColor from "~/utils/codewarsColorToHex";
 
 export default function CodewarsBadge({ username, honor, color, rank }: {
   username: string;
