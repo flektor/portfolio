@@ -1,7 +1,9 @@
 import React from "react";
 import Code from "../../components/Icons/Code";
 
-export default function CodeLink({ url }: { url: string }) {
+export default function CodeLink(
+  { url, text = "Code" }: { url: string; text?: string },
+) {
   return (
     <a
       className="rounded flex gap-2 items-center border w-fit p-1 pl-5 pr-5 round text-lg"
@@ -12,7 +14,7 @@ export default function CodeLink({ url }: { url: string }) {
       data-te-ripple-init
       data-te-ripple-color="light"
     >
-      Code
+      {text}
       <Code
         className="w-[32px] h-[32px] stroke-white"
         id="animate-hover"
