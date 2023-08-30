@@ -7,7 +7,7 @@ export default function Stack({ technologies }: { technologies: string[] }) {
     <ul className="flex flex-wrap justify-around -ml-5 -mr-5 md:m-0 md:justify-end">
       {getIcons(technologies)
         .map((image) => (
-          <li className="relative group -ml-2 -mr-2" key={image.alt}>
+          <li className="relative group -ml-2 -mr-2 md:m-0" key={image.alt}>
             <div
               className="group-hover:animate-bounce group-hover:scale-50 transition duration-150 ease-out  group-hover:ease-in"
               key={image.alt}
