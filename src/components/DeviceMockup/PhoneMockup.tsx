@@ -19,11 +19,18 @@ export function PhoneMockup(
         <div
           className={`rounded-[2rem] flex justify-center items-center overflow-hidden w-[272px] h-[572px] bg-[${props.backgroundColor}]`}
         >
-          <img
-            src={props.images[0]}
-            // className="dark:hidden  "
-            alt=""
-          />
+          {props.video
+            ? (
+              <video autoPlay loop muted>
+                <source src={props.video[0]} />
+              </video>
+            )
+            : (
+              <img
+                src={props.images[0]}
+                alt=""
+              />
+            )}
           {
             /* <img
             src={darkImageSrc}

@@ -11,11 +11,18 @@ export function LaptopMockup(
         <div
           className={` flex justify-center items-centerrounded-lg overflow-hidden h-[156px] md:h-[278px] items-center bg-[${props.backgroundColor}]`}
         >
-          <img
-            src={props.images[0]}
-            // className="dark:hidden  "
-            alt=""
-          />
+          {props.video
+            ? (
+              <video autoPlay loop muted>
+                <source src={props.video[0]} />
+              </video>
+            )
+            : (
+              <img
+                src={props.images[0]}
+                alt=""
+              />
+            )}
         </div>
       </div>
       <div className="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
