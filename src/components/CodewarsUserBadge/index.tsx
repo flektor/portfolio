@@ -20,7 +20,8 @@ export default function CodewarsBadge({ username, honor, color, rank }: {
       viewBox="0 0 275 40"
     >
       <path
-        fill="#303133"
+        // fill="#303133"
+        fill="#282C34"
         d="M 11.547,40 0,20 11.547,0 h 172.467 v 40 z"
       />
       <text
@@ -33,7 +34,8 @@ export default function CodewarsBadge({ username, honor, color, rank }: {
         flektor
       </text>
       <path
-        fill="#1d1d1f"
+        // fill="#1d1d1f"
+        fill="#111827"
         d="m 169.36514,40.116877 -11.547,-20 11.547,-19.99999985 h 93.906 l 11.547,19.99999985 -11.547,20 z"
       />
       <text
