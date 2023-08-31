@@ -15,7 +15,7 @@ export default function Candle() {
       <div className="w-full md:flex items-center gap-10">
         <LaptopMockup
           {...data.mockup}
-          className="transition hover:-skew-y-1 hover:skew-x-1 hover:-translate-y-1 z-20"
+          className="transition hover:-translate-y-1 z-20"
         />
         <div>
           <div className="md:-mt-6">

@@ -1,9 +1,9 @@
 import React from "react";
 
-import { ProjectProps } from "../../utils/projectProps";
+import { ProjectMockupProps } from "../Projects/projects";
 
 export function DesktopMockup(
-  props: ProjectProps & { className?: string },
+  props: ProjectMockupProps & { className?: string },
 ) {
   return (
     <div className={props.className}>
@@ -12,17 +12,8 @@ export function DesktopMockup(
           className={`flex justify-center items-center rounded-xl overflow-hidden h-[140px] md:h-[262px] bg-[${props.backgroundColor}]`}
         >
           {props.video
-            ? (
-              <video autoPlay loop muted>
-                <source src={props.video[0]} />
-              </video>
-            )
-            : (
-              <img
-                src={props.images[0]}
-                alt=""
-              />
-            )}
+            ? <video autoPlay loop muted src={props.video[0]} />
+            : <img src={props.images[0]} alt="" />}
         </div>
       </div>
       <div className="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl h-[24px] max-w-[301px] md:h-[42px] md:max-w-[512px]">

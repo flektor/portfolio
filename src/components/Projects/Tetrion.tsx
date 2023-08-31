@@ -15,7 +15,7 @@ export default function Tetrion() {
       <div className="w-full md:flex items-center gap-10">
         <TabletMockup
           {...data.mockup}
-          className="transition hover:-skew-y-1 hover:skew-x-1 hover:-translate-y-1 rotate-90 z-20 scale-[70%]"
+          className="transition hover:-translate-y-1 rotate-90 z-20 scale-[70%]"
         />
         <div>
           <div className="-mt-24 md:-mt-6">

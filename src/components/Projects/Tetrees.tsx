@@ -46,7 +46,7 @@ export default function Tetrees() {
         <div className="mt-10  md:mt-0 md:mr-20">
           <LaptopMockup
             {...data.mockup}
-            className="transition hover:skew-y-1 hover:-skew-x-1 hover:-translate-y-1 z-20"
+            className="transition hover:-translate-y-1 z-20"
           />
         </div>
       </div>

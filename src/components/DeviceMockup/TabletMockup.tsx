@@ -15,17 +15,8 @@ export function TabletMockup(
           className={`flex justify-center items-center rounded-[2rem] overflow-hidden h-[426px] md:h-[654px] bg-gray-900`}
         >
           {props.video
-            ? (
-              <video autoPlay loop muted>
-                <source src={props.video[0]} />
-              </video>
-            )
-            : (
-              <img
-                src={props.images[0]}
-                alt=""
-              />
-            )}
+            ? <video autoPlay loop muted src={props.video[0]} />
+            : <img src={props.images[0]} alt="" />}
         </div>
       </div>
     </div>
