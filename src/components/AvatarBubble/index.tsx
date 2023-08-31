@@ -33,7 +33,7 @@ export default function AvatarBubble() {
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      className="w-[300px] h-[300px] fill-[#CC707F]"
+      className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] fill-[#CC707F]"
     >
       <defs>
         <clipPath id="bubble">
