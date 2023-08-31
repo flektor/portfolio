@@ -4,7 +4,7 @@ export const projects = [
     description:
       "A social application where you can connect with others to participate in activities together. This project is developed using a powerful technology stack that includes TypeScript, React, Next.js, tRPC, Prisma, MySQL and TailwindCSS, also known as the t3 stack. tRPC provides an end-to-end type safety feature which makes this one of my best web development experiences so far. I commenced this project as my final project for the Spiced academy bootcamp and I am excited to continue working on it as my primary side project.",
     date: "Jul 2023",
-    liveUrl: "chicory-final-flektor.vercel.app",
+    liveUrl: "meet.vercel.app",
     repoUrl: "https://github.com/flektor/meet",
     stack: [
       "TypeScript",
@@ -46,7 +46,7 @@ export const projects = [
   {
     title: "Tetrees",
     description:
-      "At the three-day Global Game Jam, I worked with three experienced game industry professionals to form a dynamic team of four.With their guidance, I played an active role in developing an exciting Unity 2D game.The experience acted as an immersive learning journey, enabling me to acquire valuable knowledge and enhance my skills while co-creating a unique game where players tactically extend tree roots to access an underground water source.",
+      "At the three-day Global Game Jam, I worked with three experienced game industry professionals to form a dynamic team of four. With their guidance, I played an active role in developing an exciting Unity 2D game.The experience acted as an immersive learning journey, enabling me to acquire valuable knowledge and enhance my skills while co-creating a unique game where players tactically extend tree roots to access an underground water source.",
     date: "3-5 Feb 2023",
     liveUrl: "https://flektor.github.io/Tetrees/play/",
     repoUrl: "https://github.com/flektor/Tetrees",
@@ -94,7 +94,7 @@ export const projects = [
       "During my time at SPICED Academy, my fellow student and I collaborated on a React gallery application. This task enabled us to integrate our coding abilities and develop an interactive gallery for displaying images. Through pair programming, we collaborated using React to organise our app and utilised Styled Components to improve its visual appeal. We guaranteed that each image dynamically resized to fit the responsive design.",
     date: "Jun 2023",
     liveUrl: "https://github.com/flektor/tsitsi",
-    repoUrl: "https://github.com/flektor/tsitsi",
+    repoUrl: "https://flektor.github.io/tsitsi",
     stack: [
       "React",
       "JavaScript",
