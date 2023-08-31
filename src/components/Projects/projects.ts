@@ -15,6 +15,11 @@ export const projects = [
       "MySQL",
       "Tailwind",
     ],
+    mockup: {
+      images: ["./images/Meet/1.png"],
+      backgroundColor: "#FAF8EF",
+      video: ["/video/meet.mp4"],
+    },
   },
   {
     title: "Candle",
@@ -26,6 +31,11 @@ export const projects = [
     stack: ["Unity", "CSharp"],
     tag: "#mini-game-jam",
     location: "@SAE, Berlin",
+    mockup: {
+      images: ["./images/Candle.png"],
+      backgroundColor: "#FAF8EF",
+      video: ["/video/candle.mp4"],
+    },
   },
   {
     title: "Tetrees",
@@ -37,6 +47,11 @@ export const projects = [
     stack: ["Unity", "CSharp"],
     tag: "#global-game-jam",
     location: "@SAE, Berlin",
+    mockup: {
+      images: ["./images/Tetrees/2.png", "./images/Tetrees/1.png"],
+      backgroundColor: "#FAF8EF",
+      video: ["/video/tetrees.mp4"],
+    },
   },
   {
     title: "Tetrion",
@@ -54,6 +69,11 @@ export const projects = [
       "Sass",
       "Blender",
     ],
+    mockup: {
+      images: ["./images/Tetrion/1.png"],
+      video: ["/video/tetrion.mp4"],
+      backgroundColor: "#FAF8EF",
+    },
   },
 
   {
@@ -67,10 +87,17 @@ export const projects = [
       "React",
       "JavaScript",
     ],
+    mockup: {
+      images: ["./images/Gallery/1.png"],
+      backgroundColor: "#FAF8EF",
+      video: ["/video/gallery.mp4"],
+    },
   },
 ] as const;
 
 export type ProjectDetails = typeof projects[number];
+
+export type ProjectMockupProps = Pick<ProjectDetails, "mockup">["mockup"];
 
 export function getProjectDetails(title: ProjectDetails["title"]) {
   return projects.find((proj) => proj.title === title);

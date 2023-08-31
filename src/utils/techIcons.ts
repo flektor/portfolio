@@ -22,6 +22,6 @@ export function getIcon(technology: string) {
   return icons.find((item) => item.alt === technology);
 }
 
-export function getIcons(technologies: string[]) {
+export function getIcons(technologies: readonly string[]) {
   return icons.filter((item) => technologies.includes(item.alt));
 }

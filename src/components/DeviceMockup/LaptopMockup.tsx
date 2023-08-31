@@ -1,9 +1,9 @@
 import React from "react";
 
-import { ProjectProps } from "../../utils/projectProps";
+import { ProjectMockupProps } from "../Projects/projects";
 
 export function LaptopMockup(
-  props: ProjectProps & { className?: string },
+  props: ProjectMockupProps & { className?: string },
 ) {
   return (
     <div className={props.className}>
