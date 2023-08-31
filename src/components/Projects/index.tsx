@@ -12,7 +12,7 @@ export default function Projects() {
         <Meet />
       </li>
 
-      <li key="Tetrion" className="-mt-36">
+      <li key="Tetrion" className="md:-mt-36">
         <Tetrion />
       </li>
 
@@ -20,11 +20,11 @@ export default function Projects() {
         <Gallery />
       </li>
 
-      <li key="Candle" className="mt-20">
+      <li key="Candle" className="mt-36 md:mt-20">
         <Candle />
       </li>
 
-      <li key="Tetrees" className="mt-48">
+      <li key="Tetrees" className="mt-36 md:mt-48">
         <Tetrees />
       </li>
     </ul>
