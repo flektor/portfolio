@@ -14,9 +14,8 @@ export default function CodeLink(
       data-te-ripple-init
       data-te-ripple-color="light"
     >
-      <span className="hidden md:inline">
-        {text}
-      </span>
+      {/* <span className="hidden md:inline"> */}
+      {text}
       <Code
         className="w-[32px] h-[32px] stroke-white"
         id="animate-hover"
