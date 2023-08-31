@@ -20,8 +20,8 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <div className="absolute min-h-screen p-10 md:pt-24 top left w-full bg-gradient-to-b from-[#111827] to-[#27384c]" />
-      <main className="md:pt-24 flex pt-8 flex-col w-full items-center justify-between bg-[#27384c] text-white">
+      <div className="absolute min-h-screen mt-16 top left w-full bg-gradient-to-b from-[#111827] to-[#27384c]" />
+      <main className="flex pt-8 md:pt-48 flex-col w-full items-center justify-between bg-[#27384c] text-white">
         <section className="w-full flex justify-center font-mono md:pb-56 md:pt-24">
           <div className="max-w-4xl w-full mb-10 md:mb-0">
             <div className="relative flex flex-col md:flex-row mt-14 md:mt-5 items-center">
@@ -108,8 +108,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      {/* <div className="w-full h-96 bg-gradient-to-b from-[#27384c] to-[#111827]" /> */}
-      <footer className="w-full h-96 flex justify-center items-end bg-[#111827]">
+      <footer className="w-full h-56 flex justify-center items-end bg-[#111827]">
         <div className="flex items-center gap-6 m-5">
           <span className="text-xl ">gdrosin@gmail.com</span>
           <div className="flex items-center">
