@@ -6,7 +6,7 @@ export default async function (
 ) {
   try {
     const response = await fetch(
-      "https://github.com/flektor/codewars-katas/blob/main/TypeScript/5kyu__rgb_to_hex_conversion.ts",
+      "https://github.com/flektor/codewars-katas/blob/main/JavaScript/4kyu__so_many_permutations.js",
     );
     const data = await response.json();
     const rawLines = data.payload.blob.rawLines;
