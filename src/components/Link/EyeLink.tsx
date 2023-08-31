@@ -1,12 +1,10 @@
 import React from "react";
-import Code from "../../components/Icons/Code";
+import Eye from "../Icons/Eye";
 
-export default function CodeLink(
-  { url, text = "Code" }: { url: string; text?: string },
-) {
+export default function EyeLink({ url }: { url: string }) {
   return (
-    <a
-      className="rounded flex gap-2 items-center border w-fit p-1 pl-5 pr-5 round text-lg"
+    <a // className="text-xl underline flex gap-2 align-center"
+      className="rounded flex gap-1 items-center border w-fit p-1 pl-2 pr-2 text-lg border-white/30"
       target="_blank"
       href={url}
       data-te-animation-init
@@ -14,8 +12,10 @@ export default function CodeLink(
       data-te-ripple-init
       data-te-ripple-color="light"
     >
-      {text}
-      <Code
+      <span className="hidden md:inline">
+        View
+      </span>
+      <Eye
         className="w-[32px] h-[32px] stroke-white"
         id="animate-hover"
         data-te-animation-init
