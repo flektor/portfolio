@@ -6,6 +6,7 @@ import NavBar from "~/components/NavBar";
 import CodeLink from "~/components/Links/CodeLink";
 import IntroTechLogos from "~/components/IntroTechLogos";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 
 const CodeWindow = dynamic(() => import("~/components/CodeWindow"), {
   ssr: false,
@@ -71,7 +72,7 @@ export default function Home() {
 
         <section
           id="projects"
-          className="z-10 bg-[#111827] w-full mt-36 flex justify-center p-6 pt-20 pb-48"
+          className="z-10 bg-[#111827] w-full mt-36 flex justify-center p-6 pt-20 pb-36"
         >
           <div className="w-full max-w-4xl mt-24 items-center justify-between font-mono">
             <span className="text-6xl block  text-center md:text-left">
@@ -83,12 +84,12 @@ export default function Home() {
 
         <section
           id="katas"
-          className=" w-full max-w-4xl flex flex-col items-center justify-between font-mono p-6 md:p-0 mt-40"
+          className=" w-full max-w-4xl flex flex-col items-center justify-between font-mono p-6 md:p-0 mt-40 mb-36"
         >
           <div className="block mb-10 flex flex-col gap-5 w-full">
             <div className="text-center flex flex-col md:flex-row md:justify-between items-center text-xl mb-16">
               <span className="mb-6 md:m-0">
-                Check out my kata solutions on CodeWars!
+                Check my solutions on CodeWars!
               </span>
 
               <div className="w-full flex gap-8 justify-around md:justify-center items-center">
@@ -107,6 +108,38 @@ export default function Home() {
           </div>
         </section>
       </main>
+      {/* <div className="w-full h-96 bg-gradient-to-b from-[#27384c] to-[#111827]" /> */}
+      <footer className="w-full h-96 flex justify-center items-end bg-[#111827]">
+        <div className="flex items-center gap-6 m-5">
+          <span className="text-xl ">gdrosin@gmail.com</span>
+          <div className="flex items-center">
+            <a href="https://www.linkedin.com/in/georgios-drosinos/">
+              <Image
+                alt="LinkedIn"
+                src="/logos/linkedin.svg"
+                width={64}
+                height={64}
+              />
+            </a>
+            <a href="https://discord.com/users/flektor#6330">
+              <Image
+                alt="Discord"
+                src="/logos/discord.svg"
+                width={64}
+                height={64}
+              />
+            </a>
+            <a href="https://github.com/flektor">
+              <Image
+                alt="Github"
+                src="/logos/github.svg"
+                width={64}
+                height={64}
+              />
+            </a>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
