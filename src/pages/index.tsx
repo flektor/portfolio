@@ -20,8 +20,8 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <div className="absolute min-h-screen mt-16 top left w-full bg-gradient-to-b from-[#111827] to-[#27384c]" />
-      <main className="flex pt-8 md:pt-48 flex-col w-full items-center justify-between bg-[#27384c] text-white">
+      <div className="absolute min-h-screen mt-12 top left w-full bg-gradient-to-b from-[#111827] to-[#27384c]" />
+      <main className="flex pt-8 md:pt-28 flex-col w-full items-center justify-between bg-[#27384c] text-white">
         <section className="w-full flex justify-center font-mono md:pb-56 md:pt-24">
           <div className="max-w-4xl w-full mb-10 md:mb-0">
             <div className="relative flex flex-col md:flex-row mt-14 md:mt-5 items-center">
@@ -45,13 +45,13 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="mt-20 md:-mt-20 md:mb-24 z-10">
+        <div className="mt-20 md:-mt-32 md:mb-14 z-10">
           <IntroTechLogos />
         </div>
 
         <section
           id="about"
-          className="w-full max-w-4xl font-mono p-6 pt-24 md:p-0 z-10"
+          className="w-full max-w-4xl font-mono p-6 pt-24 md:p-0 z-10 md:scroll-m-24"
         >
           <span className="text-6xl block mb-10 text-center md:text-left">
             About me
@@ -62,7 +62,7 @@ export default function Home() {
 
         <section
           id="education"
-          className="w-full max-w-4xl mt-6 md:mt-24 font-mono p-6 md:p-0 pt-20"
+          className="w-full max-w-4xl mt-6 md:mt-24 font-mono p-6 md:p-0 pt-20 md:scroll-m-24"
         >
           <span className="text-6xl block mb-10 text-center md:text-left">
             Education
@@ -72,7 +72,7 @@ export default function Home() {
 
         <section
           id="projects"
-          className="z-10 bg-[#111827] w-full mt-36 flex justify-center p-6 pt-20 pb-36"
+          className="z-10 bg-[#111827] w-full mt-36 flex justify-center p-6 pt-20 pb-36  -scroll-m-24"
         >
           <div className="w-full max-w-4xl mt-24 items-center justify-between font-mono">
             <span className="text-6xl block  text-center md:text-left">
@@ -84,7 +84,7 @@ export default function Home() {
 
         <section
           id="katas"
-          className=" w-full max-w-4xl flex flex-col items-center justify-between font-mono p-6 md:p-0 mt-40 mb-36"
+          className="w-full max-w-4xl flex flex-col items-center justify-between font-mono p-6 md:p-0 mt-40 mb-36 md:scroll-m-24"
         >
           <div className="block mb-10 flex flex-col gap-5 w-full">
             <div className="text-center flex flex-col md:flex-row md:justify-between items-center text-xl mb-16">
@@ -110,7 +110,7 @@ export default function Home() {
       </main>
       <footer className="w-full h-56 flex justify-center items-end bg-[#111827]">
         <div className="flex items-center gap-6 m-5">
-          <span className="text-xl ">gdrosin@gmail.com</span>
+          <span className="text-xl text-white">gdrosin@gmail.com</span>
           <div className="flex items-center">
             <a href="https://www.linkedin.com/in/georgios-drosinos/">
               <Image
@@ -126,6 +126,7 @@ export default function Home() {
                 src="/logos/discord.svg"
                 width={64}
                 height={64}
+                className="mt-2"
               />
             </a>
             <a href="https://github.com/flektor">
