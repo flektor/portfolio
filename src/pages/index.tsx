@@ -26,7 +26,7 @@ export default function Home() {
           <div className="max-w-4xl w-full mb-10 md:mb-0">
             <div className="relative flex flex-col md:flex-row mt-14 md:mt-5 items-center">
               <div className="w-full text-4xl">
-                Hi, I'm George.
+                Hi, I&apos;m George.
                 <span className="whitespace-nowrap block md:mt-6 md:mb-3">
                   A creative
                 </span>

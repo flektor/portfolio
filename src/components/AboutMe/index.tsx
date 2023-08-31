@@ -5,7 +5,7 @@ export default function AboutMe() {
     <div className="relative flex items-center">
       <p className="w-full text-xl">
         Hi there, my name is George. I am a passionate Full-Stack Developer
-        based in Berlin. Equipped with a Bachelor's degree in Informatics
+        based in Berlin. Equipped with a Bachelor&apos;s degree in Informatics
         Engineering, I constantly strive to improve my programming skills and
         bring innovative applications to life. My most recent achievement was
         the successful completion of Spiced Academy's intensive bootcamp, a
