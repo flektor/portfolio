@@ -46,6 +46,25 @@ export default function Nav() {
         <li key="katas">
           <a href="#katas">Katas</a>
         </li>
+
+        <div className="flex">
+          <a href="https://www.linkedin.com/in/georgios-drosinos/">
+            <Image
+              alt="LinkedIn"
+              src="/logos/linkedin.svg"
+              width={48}
+              height={48}
+            />
+          </a>
+          <a href="https://github.com/flektor">
+            <Image
+              alt="Github"
+              src="/logos/github.svg"
+              width={48}
+              height={48}
+            />
+          </a>
+        </div>
       </ul>
     </nav>
   );
