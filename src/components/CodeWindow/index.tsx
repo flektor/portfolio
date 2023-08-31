@@ -41,7 +41,7 @@ export default function CodeWindow() {
       <div
         className={`${
           typeof code !== "string" && "hidden"
-        } flex items-center  bg-[#21252B] w-full`}
+        } flex items-center p-1 bg-[#21252B] w-full`}
       >
         <input
           id="default-checkbox"
@@ -58,7 +58,7 @@ export default function CodeWindow() {
         </label>
       </div>
 
-      <div className="bg-[#21252B] border-t-0 w-full h-96 rounded-b-lg">
+      <div className="bg-[#21252B] border-t-0 w-full h-256 rounded-b-lg overflow-auto">
         {isLoading || typeof code !== "string"
           ? (
             <div className="flex justify-center p-4">
