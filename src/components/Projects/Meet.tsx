@@ -40,7 +40,7 @@ export default function Meet() {
       </div>
       <PhoneMockup
         {...data.mockup}
-        className="mb-20 transition hover:-skew-y-1 hover:-skew-x-1 hover:-translate-y-1"
+        className="mb-20 transition hover:skew-y-1 hover:-skew-x-1 hover:-translate-y-1"
       />
     </div>
   );
