@@ -88,7 +88,7 @@ export default function Home() {
         >
           <div className="block mb-10 flex flex-col gap-5 w-full">
             <div className="text-center flex flex-col md:flex-row md:justify-between items-center text-xl mb-16">
-              <span className="mb-6 md:m-0">
+              <span className="mb-6 md:m-0 text-4xl">
                 Check my solutions on CodeWars!
               </span>
 
