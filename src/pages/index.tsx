@@ -7,6 +7,8 @@ import CodeLink from "~/components/Links/CodeLink";
 import IntroTechLogos from "~/components/IntroTechLogos";
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import Contact from "~/components/Contact";
+import Footer from "~/components/Footer";
 
 const CodeWindow = dynamic(() => import("~/components/CodeWindow"), {
   ssr: false,
@@ -25,17 +27,19 @@ export default function Home() {
         <section className="w-full flex justify-center font-mono md:pb-56 md:pt-24">
           <div className="max-w-4xl w-full mb-10 md:mb-0">
             <div className="relative flex flex-col md:flex-row mt-14 md:mt-5 items-center">
-              <div className="w-full text-4xl">
-                Hi, I&apos;m George.
-                <span className="whitespace-nowrap block md:mt-6 md:mb-3">
-                  A creative
-                </span>
-                <span className="text-6xl md:text-7xl block -ml-1 whitespace-nowrap">
-                  Full-stack
-                </span>
-                <span className="text-7xl md:text-8xl block -ml-1">
-                  Developer
-                </span>
+              <div>
+                <div className="w-full text-4xl">
+                  Hi, I&apos;m George.
+                  <span className="whitespace-nowrap block md:mt-6 md:mb-3">
+                    A creative
+                  </span>
+                  <span className="text-6xl md:text-7xl block -ml-1 whitespace-nowrap">
+                    Full-stack
+                  </span>
+                  <span className="text-7xl md:text-8xl block -ml-1">
+                    Developer
+                  </span>
+                </div>
               </div>
 
               <div className="mt-14 md:-mt-36 md:-ml-18 animate-levitate">
@@ -53,7 +57,7 @@ export default function Home() {
           id="about"
           className="w-full max-w-4xl font-mono p-6 pt-24 md:p-0 z-10 md:scroll-m-24"
         >
-          <span className="text-6xl block mb-10 text-center md:text-left">
+          <span className="text-6xl md:text-6xl block mb-10 text-center md:text-left">
             About me
           </span>
 
@@ -75,7 +79,7 @@ export default function Home() {
           className="z-10 bg-[#111827] w-full mt-36 flex justify-center p-6 pt-20 pb-36  -scroll-m-24"
         >
           <div className="w-full max-w-4xl mt-24 items-center justify-between font-mono">
-            <span className="text-6xl block  text-center md:text-left">
+            <span className="text-6xl block text-center md:text-left">
               Projects
             </span>
             <Projects />
@@ -84,7 +88,7 @@ export default function Home() {
 
         <section
           id="katas"
-          className="w-full max-w-4xl flex flex-col items-center justify-between font-mono p-6 md:p-0 mt-40 mb-36 md:scroll-m-24"
+          className="w-full max-w-4xl flex flex-col items-center justify-between font-mono p-6 md:p-0 mt-40 md:scroll-m-24"
         >
           <div className="block mb-10 flex flex-col gap-5 w-full">
             <div className="text-center flex flex-col md:flex-row md:justify-between items-center text-xl mb-16">
@@ -107,39 +111,22 @@ export default function Home() {
             </div>
           </div>
         </section>
-      </main>
-      <footer className="w-full h-56 flex justify-center items-end bg-[#111827]">
-        <div className="flex items-center gap-6 m-5">
-          <span className="text-xl text-white">gdrosin@gmail.com</span>
-          <div className="flex items-center">
-            <a href="https://www.linkedin.com/in/georgios-drosinos/">
-              <Image
-                alt="LinkedIn"
-                src="/logos/linkedin.svg"
-                width={64}
-                height={64}
-              />
-            </a>
-            <a href="https://discord.com/users/flektor#6330">
-              <Image
-                alt="Discord"
-                src="/logos/discord.svg"
-                width={64}
-                height={64}
-                className="mt-2"
-              />
-            </a>
-            <a href="https://github.com/flektor">
-              <Image
-                alt="Github"
-                src="/logos/github.svg"
-                width={64}
-                height={64}
-              />
-            </a>
+        <section
+          id="contact"
+          className="w-full pt-36 -scroll-m-20 bg-[#111827] font-mono flex justify-center"
+        >
+          <div className="w-full max-w-4xl flex flex-col">
+            <h1 className=" text-4xl md:text-6xl m-6 mb-3 md:mb-10">
+              Contact
+            </h1>
+            <div className="max-w-4xl p-4 pb-20 md:p-0 md:mb-24">
+              <Contact />
+            </div>
           </div>
-        </div>
-      </footer>
+        </section>
+      </main>
+      <hr className="h-px border-0 bg-gray-800 " />
+      <Footer />
     </>
   );
 }
