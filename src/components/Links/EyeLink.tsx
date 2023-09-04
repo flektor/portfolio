@@ -12,8 +12,9 @@ export default function EyeLink({ url }: { url: string }) {
       data-te-ripple-init
       data-te-ripple-color="light"
     >
-      {/* <span className="hidden md:inline"> */}
-      View
+      <span className="hidden md:inline">
+        View
+      </span>
       <Eye
         className="w-[32px] h-[32px] stroke-white"
         id="animate-hover"
