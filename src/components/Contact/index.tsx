@@ -92,8 +92,8 @@ export default function Contact() {
            * the only solution I found is by using autoComplete="new-password"
            * https://stackoverflow.com/questions/43132693/how-to-turn-off-html-input-form-field-suggestions
            */
-          name="emailValue"
-          type="email"
+          name="eddress"
+          type="text"
           autoComplete="new-password"
           required
           placeholder="jane.doe@example.com"
