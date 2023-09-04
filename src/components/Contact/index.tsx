@@ -108,7 +108,7 @@ export default function Contact() {
         <textarea
           name="content"
           required
-          className="w-full resize-y overflow-auto h-72 md:h-60 bg-black/20 mt-2 p-3 pt-2 md:pt-3 rounded-lg focus:outline-none focus:shadow-outline"
+          className="w-full resize-y overflow-auto h-96 md:h-60 bg-black/20 mt-2 p-3 pt-2 md:pt-3 rounded-lg focus:outline-none focus:shadow-outline"
           placeholder={messagePlaceholder}
         />
       </div>
