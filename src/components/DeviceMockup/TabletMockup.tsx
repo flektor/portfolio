@@ -1,9 +1,11 @@
 import React from "react";
 import { ProjectMockupProps } from "../Projects/projects";
+import useVideo from "../../utils/useVideo";
 
 export function TabletMockup(
   props: ProjectMockupProps & { className?: string },
 ) {
+  const video = useVideo(props.video[0]);
   return (
     <div className={`${props.className}`}>
       <div className="relative mx-auto border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[454px] max-w-[341px] md:h-[682px] md:max-w-[512px]">
@@ -14,9 +16,7 @@ export function TabletMockup(
         <div
           className={`flex justify-center items-center rounded-[2rem] overflow-hidden h-[426px] md:h-[654px] bg-gray-900`}
         >
-          {props.video
-            ? <video autoPlay loop muted src={props.video[0]} />
-            : <img src={props.images[0]} alt="" />}
+          {video || <img src={props.images[0]} alt="" />}
         </div>
       </div>
     </div>
