@@ -1,9 +1,10 @@
 import React from "react";
 import { ProjectMockupProps } from "../Projects/projects";
-
+import useVideo from "../../utils/useVideo";
 export function PhoneMockup(
   props: ProjectMockupProps & { className?: string },
 ) {
+  const video = useVideo(props.video[0]);
   return (
     <div
       className={`relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl ${props.className}`}
@@ -15,9 +16,7 @@ export function PhoneMockup(
       <div
         className={`rounded-[2rem] flex justify-center items-center overflow-hidden w-[272px] h-[572px] bg-[${props.backgroundColor}]`}
       >
-        {props.video
-          ? <video autoPlay loop muted src={props.video[0]} />
-          : <img src={props.images[0]} alt="" />}
+        {video || <img src={props.images[0]} alt="" />}
       </div>
     </div>
   );

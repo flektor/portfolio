@@ -1,19 +1,18 @@
 import React from "react";
-
 import { ProjectMockupProps } from "../Projects/projects";
+import useVideo from "~/utils/useVideo";
 
 export function LaptopMockup(
   props: ProjectMockupProps & { className?: string },
 ) {
+  const video = useVideo(props.video[0]);
   return (
     <div className={props.className}>
       <div className="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
         <div
           className={` flex justify-center items-centerrounded-lg overflow-hidden h-[156px] md:h-[278px] items-center bg-[${props.backgroundColor}]`}
         >
-          {props.video
-            ? <video autoPlay loop muted src={props.video[0]} />
-            : <img src={props.images[0]} alt="" />}
+          {video || <img src={props.images[0]} alt="" />}
         </div>
       </div>
       <div className="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-xl rounded-t-sm h-[17px] max-w-[351px] md:h-[21px] md:max-w-[597px]">
