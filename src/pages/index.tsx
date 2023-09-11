@@ -22,21 +22,22 @@ export default function Home() {
   return (
     <>
       <NavBar />
+      <div className="absolute h-12 top left w-full bg-[#111827]" />
       <div className="absolute min-h-screen mt-12 top left w-full bg-gradient-to-b from-[#111827] to-[#27384c]" />
-      <main className="flex pt-8 md:pt-28 flex-col w-full items-center justify-between bg-[#27384c] text-white">
+      <main className="flex md:pt-28 flex-col w-full items-center justify-between bg-[#27384c] text-white">
         <section className="w-full flex justify-center font-mono md:pb-56 md:pt-24">
           <div className="max-w-4xl w-full mb-10 md:mb-0">
             <div className="relative flex flex-col md:flex-row mt-14 md:mt-5 items-center">
               <div>
-                <div className="w-full text-4xl">
+                <div className="w-full text-4xl mt-6 md:mt-0">
                   Hi, I&apos;m George.
                   <span className="whitespace-nowrap block md:mt-6 md:mb-3">
                     A creative
                   </span>
-                  <span className="text-6xl md:text-7xl block -ml-1 whitespace-nowrap">
+                  <span className="text-5xl md:text-7xl block -ml-1 whitespace-nowrap">
                     Full-stack
                   </span>
-                  <span className="text-7xl md:text-8xl block -ml-1">
+                  <span className="text-6xl md:text-8xl block -ml-1">
                     Developer
                   </span>
                 </div>
@@ -57,7 +58,7 @@ export default function Home() {
           id="about"
           className="w-full max-w-4xl font-mono p-6 pt-24 md:p-0 z-10 md:scroll-m-24"
         >
-          <span className="text-6xl md:text-6xl block mb-10 text-center md:text-left">
+          <span className="text-5xl md:text-6xl block mb-10 text-center md:text-left">
             About me
           </span>
 
@@ -68,7 +69,7 @@ export default function Home() {
           id="education"
           className="w-full max-w-4xl mt-6 md:mt-24 font-mono p-6 md:p-0 pt-20 md:scroll-m-24"
         >
-          <span className="text-6xl block mb-10 text-center md:text-left">
+          <span className="text-5xl block mb-10 text-center md:text-left">
             Education
           </span>
           <Education />
@@ -79,7 +80,7 @@ export default function Home() {
           className="z-10 bg-[#111827] w-full mt-36 flex justify-center p-6 pt-20 pb-36  -scroll-m-24"
         >
           <div className="w-full max-w-4xl mt-24 items-center justify-between font-mono">
-            <span className="text-6xl block text-center md:text-left">
+            <span className="text-5xl md:text-6xl block text-center md:text-left">
               Projects
             </span>
             <Projects />
@@ -96,12 +97,15 @@ export default function Home() {
                 Check my solutions on CodeWars!
               </span>
 
-              <div className="w-full flex gap-8 justify-around md:justify-center items-center">
+              <div className="w-full flex flex-col md:flex-row md:gap-8 justify-around md:justify-center items-center">
                 <CodeLink
                   url="https://github.com/flektor/codewars-katas/"
                   text="Repo"
                 />
-                <a href="https://www.codewars.com/users/flektor">
+                <a
+                  href="https://www.codewars.com/users/flektor"
+                  className="mt-7 md:mt-0"
+                >
                   <CodewarsUser username="flektor" />
                 </a>
               </div>

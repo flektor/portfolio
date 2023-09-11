@@ -4,14 +4,14 @@ export default function Education() {
   return (
     <>
       <div className="relative w-full flex">
-        <span className="hidden md:visible text-3xl -ml-4 md:-ml-11 mr-1 mt-1 ">
+        <span className="text-3xl -ml-4 md:-ml-11 mr-1 mt-1 ">
           🎓
         </span>
         <div className="relative justify-center">
           <span className="text-3xl md:text-4xl pb-1">
             Bachelor
           </span>
-          <span className="whitespace-nowrap text-2xl md:text-3xl p-1 ml-2">
+          <span className="md:whitespace-nowrap text-2xl md:text-3xl p-1 ml-2">
             in <span className="block md:inline">Informatics Engineering</span>
           </span>
           <span className="-mt-6 md:m-0 md:text-xl block">
@@ -24,7 +24,7 @@ export default function Education() {
       </div>
 
       <div className="relative w-full flex">
-        <span className="hidden md:visible text-2xl -ml-4 md:-ml-10 mr-2 mt-1 ">
+        <span className="text-2xl -ml-4 md:-ml-10 mr-2 mt-1 ">
           🌶️
         </span>
         <div className="relative justify-center">

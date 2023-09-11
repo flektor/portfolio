@@ -16,14 +16,14 @@ export default function Gallery() {
         <div>
           <div className="pb-md:flex justify-between">
             <div className="mt-5 mb-5 w-full flex justify-around items-center">
-              <span className="flex flex-col text-5xl ">
+              <span className="flex flex-col text-4xl md:text-5xl">
                 {data.title}
 
                 <span className="text-xl text-white/60 whitespace-nowrap">
                   {data.date}
                 </span>
               </span>
-              <div className="mt-5 mb-5 w-full flex justify-end items-bottom gap-2">
+              <div className="mb-5 w-full flex justify-end items-bottom gap-2">
                 <EyeLink url={data.liveUrl} />
                 <CodeLink url={data.repoUrl} />
               </div>
@@ -38,10 +38,12 @@ export default function Gallery() {
           </span>
         </div>
       </div>
-      <PhoneMockup
-        {...data.mockup}
-        className="mb-20 transition hover:skew-y-1 hover:-skew-x-1 hover:-translate-y-1"
-      />
+      <div className="flex justify-center">
+        <PhoneMockup
+          {...data.mockup}
+          className="-mb-5 -mt-20 md:mt-0 md:mb-20 transition hover:skew-y-1 hover:-skew-x-1 hover:-translate-y-1 scale-75 md:scale-100"
+        />
+      </div>
     </div>
   );
 }
