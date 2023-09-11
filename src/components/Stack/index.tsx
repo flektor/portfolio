@@ -22,7 +22,7 @@ export default function Stack({ technologies }: StackProps) {
                 height={64}
               />
             </div>
-            <div className="absolute inset-0 pt-28 flex items-center justify-center opacity-0 group-hover:opacity-100 mb-5 z-10 group-hover:transition">
+            <div className="absolute inset-0 mt-28 flex items-center justify-center opacity-0 group-hover:opacity-100 mb-5 z-10 group-hover:transition">
               <div className="text-white/60 text-xl -mt-24">{image.alt}</div>
             </div>
           </li>
