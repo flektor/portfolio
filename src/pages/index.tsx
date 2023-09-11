@@ -101,6 +101,7 @@ export default function Home() {
                 <CodeLink
                   url="https://github.com/flektor/codewars-katas/"
                   text="Repo"
+                  forceText
                 />
                 <a
                   href="https://www.codewars.com/users/flektor"
