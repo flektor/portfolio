@@ -2,7 +2,11 @@ import React from "react";
 import Code from "../../components/Icons/Code";
 
 export default function CodeLink(
-  { url, text = "Code" }: { url: string; text?: string },
+  { url, text = "Code", forceText = false }: {
+    url: string;
+    text?: string;
+    forceText?: boolean;
+  },
 ) {
   return (
     <a
@@ -14,7 +18,7 @@ export default function CodeLink(
       data-te-ripple-init
       data-te-ripple-color="light"
     >
-      <span className="hidden md:inline">
+      <span className={forceText ? "" : `hidden md:inline`}>
         {text}
       </span>
       <Code

@@ -16,7 +16,7 @@ export default function Tetrees() {
         <div>
           <div className="md:-mt-6">
             <div className="mt-5 mb-5 w-full flex justify-start items-center">
-              <span className="flex flex-col text-5xl mr-2">
+              <span className="flex flex-col text-4xl md:text-5xl mr-2">
                 <span className="whitespace-nowrap">
                   {data.title}
                 </span>
@@ -28,7 +28,7 @@ export default function Tetrees() {
                   {data.date}
                 </span>
               </span>
-              <div className="md:hidden mb-20 w-full flex justify-end gap-2">
+              <div className="md:hidden mb-20 w-full -ml-6 md:ml-0 flex justify-end gap-2">
                 <EyeLink url={data.liveUrl} />
                 <CodeLink url={data.repoUrl} />
               </div>
@@ -50,7 +50,7 @@ export default function Tetrees() {
           />
         </div>
       </div>
-      <span className="text-xl block mt-6 ">
+      <span className="text-xl block mt-6">
         {data.description}
       </span>
     </div>

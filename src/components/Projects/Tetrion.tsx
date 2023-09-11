@@ -15,12 +15,12 @@ export default function Tetrion() {
       <div className="w-full md:flex items-center gap-10">
         <TabletMockup
           {...data.mockup}
-          className="transition hover:-translate-y-1 rotate-90 z-20 scale-[70%]"
+          className="transition hover:-translate-y-1 rotate-90 z-20 scale-75 mb-8 md:m-0"
         />
         <div>
           <div className="-mt-24 md:-mt-6">
             <div className="mt-5 mb-5 w-full flex justify-start items-center">
-              <span className="flex flex-col text-5xl mr-2">
+              <span className="flex flex-col text-4xl md:text-5xl mr-2">
                 {data.title}
                 <span className="text-xl text-white/60 whitespace-nowrap">
                   {data.date}

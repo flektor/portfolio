@@ -11,7 +11,7 @@ export default function Education() {
           <span className="text-3xl md:text-4xl pb-1">
             Bachelor
           </span>
-          <span className="whitespace-nowrap text-2xl md:text-3xl p-1 ml-2">
+          <span className="md:whitespace-nowrap text-2xl md:text-3xl p-1 ml-2">
             in <span className="block md:inline">Informatics Engineering</span>
           </span>
           <span className="-mt-6 md:m-0 md:text-xl block">

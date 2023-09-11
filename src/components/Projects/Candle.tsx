@@ -20,7 +20,7 @@ export default function Candle() {
         <div>
           <div className="md:-mt-6">
             <div className="mt-5 mb-5 w-full flex justify-start items-center">
-              <span className="flex flex-col text-5xl mr-2">
+              <span className="flex flex-col text-4xl md:text-5xl mr-2">
                 <span className="whitespace-nowrap">
                   {data.title}
                 </span>
