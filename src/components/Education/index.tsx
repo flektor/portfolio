@@ -4,7 +4,7 @@ export default function Education() {
   return (
     <>
       <div className="relative w-full flex">
-        <span className="text-3xl -ml-4 md:-ml-11 mr-1 mt-1 ">
+        <span className="hidden md:visible text-3xl -ml-4 md:-ml-11 mr-1 mt-1 ">
           🎓
         </span>
         <div className="relative justify-center">
@@ -24,7 +24,7 @@ export default function Education() {
       </div>
 
       <div className="relative w-full flex">
-        <span className="text-2xl -ml-4 md:-ml-10 mr-2 mt-1 ">
+        <span className="hidden md:visible text-2xl -ml-4 md:-ml-10 mr-2 mt-1 ">
           🌶️
         </span>
         <div className="relative justify-center">
