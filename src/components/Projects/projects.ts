@@ -93,8 +93,8 @@ export const projects = [
     description:
       "During my time at SPICED Academy, my fellow student and I collaborated on a React gallery application. This task enabled us to integrate our coding abilities and develop an interactive gallery for displaying images. Through pair programming, we collaborated using React to organise our app and utilised Styled Components to improve its visual appeal. We guaranteed that each image dynamically resized to fit the responsive design.",
     date: "Jun 2023",
-    liveUrl: "https://github.com/flektor/tsitsi",
-    repoUrl: "https://flektor.github.io/tsitsi",
+    repoUrl: "https://github.com/flektor/tsitsi",
+    liveUrl: "https://tsitsi.vercel.app/",
     stack: [
       "React",
       "JavaScript",
