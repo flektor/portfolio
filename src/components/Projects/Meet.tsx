@@ -24,7 +24,7 @@ export default function Meet() {
                 </span>
               </span>
               <div className="mt-5 mb-5 w-full flex justify-end items-bottom gap-2">
-                <EyeLink url={data.liveUrl} />
+                {/* <EyeLink url={data.liveUrl} /> */}
                 <CodeLink url={data.repoUrl} />
               </div>
             </div>
