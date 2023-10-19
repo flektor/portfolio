@@ -2,7 +2,7 @@ import React from "react";
 import Stack from "../Stack";
 import EyeLink from "../Links/EyeLink";
 import CodeLink from "../Links/CodeLink";
-import { PhoneMockup } from "../DeviceMockup/PhoneMockup";
+import { PhoneMockup } from "../DeviceMockup/PhoneMockup2";
 import { getProjectDetails } from "./projects";
 
 export default function Meet() {
@@ -11,7 +11,7 @@ export default function Meet() {
     return null;
   }
   return (
-    <div className="mt-10 mb-10  flex flex-col-reverse md:flex-row gap-10">
+    <div className="mt-10 mb-10 flex flex-col-reverse md:flex-row gap-10">
       <div className="w-full flex items-center -mt-24">
         <div>
           <div className="pb-md:flex justify-between">
@@ -23,8 +23,8 @@ export default function Meet() {
                   {data.date}
                 </span>
               </span>
-              <div className="mt-5 mb-5 w-full flex justify-end items-bottom gap-2">
-                {/* <EyeLink url={data.liveUrl} /> */}
+              <div className="mb-5 w-full flex justify-end items-bottom gap-2">
+                <EyeLink url={data.liveUrl} />
                 <CodeLink url={data.repoUrl} />
               </div>
             </div>
@@ -41,7 +41,7 @@ export default function Meet() {
       <div className="flex justify-center">
         <PhoneMockup
           {...data.mockup}
-          className="-mb-5 md:mb-20 transition hover:skew-y-1 hover:-skew-x-1 hover:-translate-y-1 scale-75 md:scale-100"
+          className="-mb-5 -mt-20 md:mt-0 md:mb-20 transition hover:skew-y-1 hover:-skew-x-1 hover:-translate-y-1 scale-75 md:scale-100"
         />
       </div>
     </div>
