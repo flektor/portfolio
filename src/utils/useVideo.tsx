@@ -1,8 +1,10 @@
 import React, { useMemo } from "react";
 
-export default function useVideo(src: string) {
+export default function useVideo(
+  props: React.VideoHTMLAttributes<HTMLVideoElement>,
+) {
   const memorizedVideo = useMemo(() => {
-    return src ? <video autoPlay loop muted src={src} /> : null;
-  }, [src]);
+    return <video autoPlay loop muted {...props} />;
+  }, [props.src]);
   return memorizedVideo;
 }
