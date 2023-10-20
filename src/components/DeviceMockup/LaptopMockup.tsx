@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { ProjectMockupProps } from "../Projects/projects";
 import useVideo from "~/utils/useVideo";
 
 export function LaptopMockup(
   props: ProjectMockupProps & { className?: string },
 ) {
-  const video = useVideo(props.video[0]);
+  const video = useVideo({
+    src: props.video[0],
+  });
+
   return (
     <div className={props.className}>
       <div className="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">

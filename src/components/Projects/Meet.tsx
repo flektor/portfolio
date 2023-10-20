@@ -2,7 +2,7 @@ import React from "react";
 import Stack from "../Stack";
 import EyeLink from "../Links/EyeLink";
 import CodeLink from "../Links/CodeLink";
-import { PhoneMockup } from "../DeviceMockup/PhoneMockup2";
+import { PhoneMockup } from "../DeviceMockup/PhoneMockup";
 import { getProjectDetails } from "./projects";
 
 export default function Meet() {
@@ -41,7 +41,7 @@ export default function Meet() {
       <div className="flex justify-center">
         <PhoneMockup
           {...data.mockup}
-          className="-mb-5 -mt-20 md:mt-0 md:mb-20 transition hover:skew-y-1 hover:-skew-x-1 hover:-translate-y-1 scale-75 md:scale-100"
+          className="-mb-5 -mt-20 md:mt-0 md:mb-20 transition hover:skew-y-1 hover:-skew-x-1 hover:-translate-y-1 scale-75 md:scale-100 h-[640px] w-[275px]"
         />
       </div>
     </div>

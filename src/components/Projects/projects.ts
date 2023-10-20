@@ -16,11 +16,17 @@ export const projects = [
       "Tailwind",
     ],
     mockup: {
-      images: ["./images/Meet/1.png"],
+      images: [
+        "./images/meet/1.png",
+        "./images/meet/2.png",
+        "./images/meet/3.png",
+        "./images/meet/4.png",
+        "./images/meet/5.png",
+      ],
       backgroundColor: "#FAF8EF",
       video: [
-        // "/video/meet.mp4",
-        "https://firebasestorage.googleapis.com/v0/b/portfolio-7926e.appspot.com/o/video%2Fmeet_min.mp4?alt=media&token=b61878d6-f716-42bb-ad8d-316f465601f1",
+        "/video/meet.mp4",
+        // "https://firebasestorage.googleapis.com/v0/b/portfolio-7926e.appspot.com/o/video%2Fmeet_min.mp4?alt=media&token=b61878d6-f716-42bb-ad8d-316f465601f1",
       ],
     },
   },
@@ -35,11 +41,11 @@ export const projects = [
     tag: "#mini-game-jam",
     location: "@SAE, Berlin",
     mockup: {
-      images: ["./images/Candle.png"],
+      images: ["./images/candle1.png", "./images/candle2.png"],
       backgroundColor: "#FAF8EF",
       video: [
-        // "/video/candle.mp4",
-        "https://firebasestorage.googleapis.com/v0/b/portfolio-7926e.appspot.com/o/video%2Fcandle.mp4?alt=media&token=153a608e-1682-4e89-9f50-ba3bfe48ba04",
+        "/video/candle.mp4",
+        // "https://firebasestorage.googleapis.com/v0/b/portfolio-7926e.appspot.com/o/video%2Fcandle.mp4?alt=media&token=153a608e-1682-4e89-9f50-ba3bfe48ba04",
       ],
     },
   },
@@ -54,11 +60,16 @@ export const projects = [
     tag: "#global-game-jam",
     location: "@SAE, Berlin",
     mockup: {
-      images: ["./images/Tetrees/2.png", "./images/Tetrees/1.png"],
+      images: [
+        "./images/tetrees1.png",
+        "./images/tetrees2.png",
+        "./images/tetrees3.png",
+        "./images/tetrees4.png",
+      ],
       backgroundColor: "#FAF8EF",
       video: [
-        // "/video/tetrees.mp4",
-        "https://firebasestorage.googleapis.com/v0/b/portfolio-7926e.appspot.com/o/video%2Ftetrees.mp4?alt=media&token=0be1ad42-35fb-465d-9b39-1f5de6676ca4",
+        "/video/tetrees.mp4",
+        // "https://firebasestorage.googleapis.com/v0/b/portfolio-7926e.appspot.com/o/video%2Ftetrees.mp4?alt=media&token=0be1ad42-35fb-465d-9b39-1f5de6676ca4",
       ],
     },
   },
@@ -79,10 +90,10 @@ export const projects = [
       "Blender",
     ],
     mockup: {
-      images: ["./images/Tetrion/1.png"],
+      images: ["./images/tetrion1.png", "./images/tetrion2.png"],
       video: [
-        // "/video/tetrion.mp4",
-        "https://firebasestorage.googleapis.com/v0/b/portfolio-7926e.appspot.com/o/video%2Ftetrion.mp4?alt=media&token=ecc61b37-833c-4f4c-8332-976ae830ee56",
+        "/video/tetrion.mp4",
+        // "https://firebasestorage.googleapis.com/v0/b/portfolio-7926e.appspot.com/o/video%2Ftetrion.mp4?alt=media&token=ecc61b37-833c-4f4c-8332-976ae830ee56",
       ],
       backgroundColor: "#FAF8EF",
     },
@@ -100,11 +111,15 @@ export const projects = [
       "JavaScript",
     ],
     mockup: {
-      images: ["./images/Gallery/1.png"],
+      images: [
+        "./images/gallery/1.png",
+        "./images/gallery/2.png",
+        "./images/gallery/3.png",
+      ],
       backgroundColor: "#FAF8EF",
       video: [
-        // "/video/gallery.mp4",
-        "https://firebasestorage.googleapis.com/v0/b/portfolio-7926e.appspot.com/o/video%2Fgallery.mp4?alt=media&token=952f1dfe-ca23-4ac7-9247-d655e1184db8",
+        "/video/gallery.mp4",
+        // "https://firebasestorage.googleapis.com/v0/b/portfolio-7926e.appspot.com/o/video%2Fgallery.mp4?alt=media&token=952f1dfe-ca23-4ac7-9247-d655e1184db8",
       ],
     },
   },

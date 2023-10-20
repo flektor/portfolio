@@ -41,7 +41,7 @@ export default function Gallery() {
       <div className="flex justify-center">
         <PhoneMockup
           {...data.mockup}
-          className="-mb-5 -mt-20 md:mt-0 md:mb-20 transition hover:skew-y-1 hover:-skew-x-1 hover:-translate-y-1 scale-75 md:scale-100"
+          className="-mb-5 -mt-20 md:mt-0 md:mb-20 transition hover:skew-y-1 hover:-skew-x-1 hover:-translate-y-1 scale-75 md:scale-100 h-[550px] w-[275px]"
         />
       </div>
     </div>
