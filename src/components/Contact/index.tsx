@@ -7,7 +7,7 @@ import {
   ContactMessageRequest,
   emailRegex,
   validateInput,
-} from "../../pages/api/contact/index";
+} from "../../pages/api/contact";
 
 export type MessageInput = {
   nameValue: string;
