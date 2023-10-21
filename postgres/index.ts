@@ -12,7 +12,7 @@ function createMessagesTable() {
       MessageID SERIAL PRIMARY KEY,
       Name VARCHAR(255) NOT NULL,
       Pronouns VARCHAR(255),
-      Email VARCHAR(255) UNIQUE NOT NULL,
+      Email VARCHAR(255) NOT NULL,
       Content TEXT,
       DateTime TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     );`;
