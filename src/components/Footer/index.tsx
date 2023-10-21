@@ -22,8 +22,8 @@ export default function Footer() {
           gdrosin@gmail.com
           <Copy className="w-5 h-5 stroke-white/60 group-hover:stroke-white" />
           {showClipboardMessage && (
-            <div className="absolute -mt-20 -ml-1 p-2 flex rounded-lg items-center justify-center border border-gray-600 mb-1 z-10 bg-[#111827]">
-              <span className="w-40 text-white/60 text-sm md:text-md">
+            <div className="absolute -mt-20 -ml-1 p-2 pr-1.5 flex rounded-lg items-center justify-center border border-gray-600 mb-1 z-10 bg-[#111827]">
+              <span className="w-21 text-gray-300 text-sm md:text-md">
                 Copied to clipboard! ❤️
               </span>
             </div>
