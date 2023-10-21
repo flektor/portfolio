@@ -14,7 +14,7 @@ export default function SelectPronouns({ onChange }: SelectPronounsProps) {
     >
       {Object.keys(PronounsValues).map((key) => {
         const typedKey = key as keyof typeof PronounsValues;
-        const isNone = PronounsValues[typedKey] === PronounsValues.none;
+        const isNone = PronounsValues[typedKey] === PronounsValues.None;
         return (
           <option
             key={key}
