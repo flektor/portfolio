@@ -9,7 +9,7 @@ export default function SelectCustomPronouns() {
       <input
         className="w-full bg-black/20 p-3 rounded-lg focus:outline-none focus:shadow-outline"
         type="text"
-        required
+        // required
         name="customPronounsValue"
         placeholder="Please enter your pronouns"
         autoComplete="new-password"
