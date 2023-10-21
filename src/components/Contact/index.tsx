@@ -1,7 +1,8 @@
-import React, { ChangeEvent, useState } from "react";
+import React, { ChangeEvent, useRef, useState } from "react";
 import PronounsValues, { Pronouns } from "./pronouns-values";
 import SelectPronouns from "./SelectPronouns";
 import CustomPronounsInput from "./CustomPronounsInput";
+import Spinner from "../Spinner";
 import {
   ContactMessageError,
   ContactMessageRequest,
@@ -31,6 +32,8 @@ export default function Contact() {
   const [showNameError, setShowNameError] = useState<InputError>(false);
   const [showContentError, setShowContentError] = useState<InputError>(false);
   const [showEmailError, setShowEmailError] = useState<InputError>(false);
+
+  const [showSpinner, setShowSpinner] = useState(false);
 
   function handlePronounsChange(event: ChangeEvent<HTMLSelectElement>) {
     setIsPronouns(event.target.value === PronounsValues.Custom);
@@ -90,7 +93,7 @@ export default function Contact() {
       return handleValidationError(error);
     }
 
-    event.currentTarget.reset();
+    setShowSpinner(true);
 
     const response = await fetch("/api/contact", {
       method: "POST",
@@ -100,6 +103,10 @@ export default function Contact() {
       body: JSON.stringify(object),
     });
 
+    formRef.current?.reset();
+
+    setShowSpinner(false);
+
     if (!response.ok) {
       return;
     }
@@ -108,8 +115,9 @@ export default function Contact() {
     setTimeout(() => setShowMessageSent(false), 4000);
   }
 
+  const formRef = useRef<HTMLFormElement>(null);
   return (
-    <form onSubmit={handleFormSubmit} className="w-full">
+    <form ref={formRef} onSubmit={handleFormSubmit} className="w-full">
       <div className=" flex flex-wrap items-center gap-3">
         <div className=" flex flex-col justify-around">
           <label
@@ -208,10 +216,11 @@ export default function Contact() {
       <div className="flex justify-between items-center gap-3 mt-2">
         <button
           type="submit"
-          className="text-sm font-bold p-3 pl-5 pr-5 tracking-wide bg-gray-800 rounded w-fit focus:outline-none focus:shadow-outline border border-gray-600"
+          className="flex justify-center text-sm w-20 font-bold p-3 pl-5 pr-5 tracking-wide bg-gray-800 rounded w-fit focus:outline-none focus:shadow-outline border border-gray-600"
         >
-          Send
+          {showSpinner ? <Spinner /> : "Send"}
         </button>
+
         {showMessageSent && (
           <div className="p-2.5 rounded-lg border border-green-600 z-10 bg-[#111827]">
             <span className="mx-2 text-white/60 text-sm md:text-md">
