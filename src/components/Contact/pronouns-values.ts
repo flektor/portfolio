@@ -1,9 +1,9 @@
 const PronounsValues = {
-  none: "None",
-  sheHer: "She/Her",
-  himHis: "Him/His",
-  theyThem: "They/Them",
-  custom: "Custom",
+  None: "None",
+  SheHer: "She/Her",
+  HeHim: "He/Him",
+  TheyThem: "They/Them",
+  Custom: "Custom",
 } as const;
 
 export type Pronouns = typeof PronounsValues[keyof typeof PronounsValues];
