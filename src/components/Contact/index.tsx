@@ -27,7 +27,9 @@ type InputError = false | "empty" | "invalid";
 
 export default function Contact() {
   const [isCustomPronouns, setIsPronouns] = useState(false);
-  const [showMessageSent, setShowMessageSent] = useState(false);
+  const [showMessageSent, setShowMessageSent] = useState<
+    false | "success" | "error"
+  >(false);
 
   const [showNameError, setShowNameError] = useState<InputError>(false);
   const [showContentError, setShowContentError] = useState<InputError>(false);
@@ -95,24 +97,26 @@ export default function Contact() {
 
     setShowSpinner(true);
 
-    const response = await fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(object),
-    });
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(object),
+      });
 
-    formRef.current?.reset();
-
-    setShowSpinner(false);
-
-    if (!response.ok) {
-      return;
+      if (!response.ok) {
+        return setShowMessageSent("error");
+      }
+      formRef.current?.reset();
+      setShowMessageSent("success");
+    } catch (error) {
+      setShowMessageSent("error");
+    } finally {
+      setShowSpinner(false);
+      setTimeout(() => setShowMessageSent(false), 4000);
     }
-
-    setShowMessageSent(true);
-    setTimeout(() => setShowMessageSent(false), 4000);
   }
 
   const formRef = useRef<HTMLFormElement>(null);
@@ -221,11 +225,20 @@ export default function Contact() {
           {showSpinner ? <Spinner /> : "Send"}
         </button>
 
-        {showMessageSent && (
+        {showMessageSent === "success" && (
           <div className="p-2.5 rounded-lg border border-green-600 z-10 bg-[#111827]">
-            <span className="mx-2 text-white/60 text-sm md:text-md">
+            <span className="mx-2 text-gray-300 text-sm md:text-md">
               Message Sent! ❤️
             </span>
+          </div>
+        )}
+
+        {showMessageSent === "error" && (
+          <div className="p-2.5 rounded-lg border border-yellow-600 z-10 bg-[#111827]">
+            <span className="mx-2 text-gray-300 text-sm md:text-md">
+              Something went wrong
+            </span>
+            😳
           </div>
         )}
       </div>
