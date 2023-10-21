@@ -120,7 +120,7 @@ export default function Home() {
           className="w-full pt-36 -scroll-m-20 bg-[#111827] font-mono flex justify-center"
         >
           <div className="w-full max-w-4xl flex flex-col">
-            <h1 className=" text-4xl md:text-6xl m-6 mb-3 md:mb-10">
+            <h1 className=" text-4xl md:text-6xl m-4 md:m-3 md:ml-0 md:mb-10">
               Contact
             </h1>
             <div className="max-w-4xl p-4 pb-20 md:p-0 md:mb-24">
