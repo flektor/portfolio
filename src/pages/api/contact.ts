@@ -1,8 +1,6 @@
-// import { sql } from "@vercel/postgres";
 import type { NextApiRequest, NextApiResponse } from "next";
-import PronounsValues, {
-  Pronouns,
-} from "../../../components/Contact/pronouns-values";
+import { Pronouns } from "../../components/Contact/pronouns-values";
+import { insertMessage } from "../../../postgres";
 
 export const emailRegex =
   /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -74,11 +72,6 @@ export default async function contact(
     return res.status(405).send({ error });
   }
 
-  console.log(data);
-  //   if (r) {
-  //   const likes = 100;
-  //   const { rows } = await sql`SELECT * FROM posts WHERE likes > ${likes};`;
-
+  await insertMessage(data);
   res.json(true);
-  //   }
 }
