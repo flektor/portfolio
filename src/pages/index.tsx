@@ -6,7 +6,6 @@ import NavBar from "~/components/NavBar";
 import CodeLink from "~/components/Links/CodeLink";
 import IntroTechLogos from "~/components/IntroTechLogos";
 import dynamic from "next/dynamic";
-import Image from "next/image";
 import Contact from "~/components/Contact";
 import Footer from "~/components/Footer";
 
